@@ -6,7 +6,7 @@ import TodosList from "./components/TodosList";
 function App() {
   return (
     <div id="app" className="flex flex-col container max-w-md mx-auto md:pt-8">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
           <section>
             <Switch>
               <Route exact path="/" component={TodosList} />
